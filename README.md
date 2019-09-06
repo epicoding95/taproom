@@ -1,14 +1,10 @@
 
-# Kelar Tap Room
+# Kelar's Tap Room
 
 
-## An application that allows users to look at the list of kegs I have available to the public. You can see each kegs brand, kind of beer, price, and its alcohol content. You can also add new kegs of beer to my list of kegs available with just a few clicks.
-
-## specs
-
+### An application that allows users to look at the list of kegs I have available to the public. You can see each kegs brand, kind of beer, price, and its alcohol content. You can also add new kegs of beer to my list of kegs available with just a few clicks.
 
 ## Setup/Installation Requirements
-s
 * go to https://github.com/epicoding95/taproom
 
 * Open up your terminal, go to the desktop screen and type in the command "git clone https://github.com/epicoding95/taproom"
