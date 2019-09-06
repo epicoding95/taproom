@@ -11,7 +11,7 @@ const Nav = () => {
     const [kegs, setKegs] = useContext(KegContext);
     return (
         <div>
-            <h1>Kelar Crisp</h1>
+            <h1>Kelar's Kegs</h1>
             <p> <strong>list of kegs available: {kegs.length}</strong></p>
 
         </div>
