@@ -10,10 +10,52 @@ const AddKeg = () => {
     const [alcohol, setAlcohol] = useState('');
     const [kegs, setKegs] = useContext(KegContext);
 
-    return (
+    const updateName = update => {
+        setName(update.target.value);
+    }
+    const updateBrand = update => {
+        setBrand(update.target.value);
+    }
+    const updatePrice = update => {
+        setPrice(update.target.value);
+    }
+    const updateAlcohol = update => {
+        setAlcohol(update.target.value);
+    }
+    const AddAnotherKeg = e => {
+        e.preventDefault();
+        setKegs(prevKegs => [...prevKegs, { name: name, brand: brand, price: price, alcohol: alcohol }])
+    }
 
-        <div></div>
-    )
+
+    return (
+        <form onSubmit={AddAnotherKeg}>
+            <p></p>
+
+            <input type="text"
+                name="name"
+                value={name}
+                onChange={updateName} />
+
+            <input type="text"
+                name="brand"
+                value={brand}
+                onChange={updateBrand} />
+
+            <input type="text"
+                name="price"
+                value={price}
+                onChange={updatePrice} />
+
+            <input type="text"
+                name="alcohol"
+                value={alcohol}
+                onChange={updateAlcohol} />
+
+            <button>Submit</button>
+        </form>
+
+    );
 }
 
 export default AddKeg;

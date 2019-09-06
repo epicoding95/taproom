@@ -1,4 +1,4 @@
-import React, {useState, createContext} from 'react';
+import React, { useState, createContext } from 'react';
 
 export const KegContext = createContext();
 
@@ -14,8 +14,8 @@ export const KegProvider = props => {
     ]);
 
     return (
-        <KegContext.Provider value = {[kegs, setKegs]}>
-        {props.children}
+        <KegContext.Provider value={[kegs, setKegs]}>
+            {props.children}
         </KegContext.Provider>
     );
 };
