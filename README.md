@@ -1,5 +1,6 @@
 
 # Kelar's Tap Room
+![beer](https://user-images.githubusercontent.com/49597486/64456439-0bf07500-d0a5-11e9-9c60-874787608c57.jpeg)
 
 
 ### An application that allows users to look at the list of kegs I have available to the public. You can see each kegs brand, kind of beer, price, and its alcohol content. You can also add new kegs of beer to my list of kegs available with just a few clicks.
