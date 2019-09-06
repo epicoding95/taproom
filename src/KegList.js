@@ -13,7 +13,7 @@ const KegList = () => {
                     <Keg name={keg.name}
                         brand={keg.brand}
                         price={keg.price}
-                        alchol={keg.alcohol}
+                        alcohol={keg.alcohol}
                         key={keg.id}
                     />
                 ))

@@ -3,11 +3,16 @@ import { KegContext } from './KegContext';
 
 const Nav = () => {
 
+
+    var styledNav = {
+
+    }
+
     const [kegs, setKegs] = useContext(KegContext);
     return (
         <div>
             <h1>Kelar Crisp</h1>
-            <p> list of kegs available: {kegs.length}</p>
+            <p> <strong>list of kegs available: {kegs.length}</strong></p>
 
         </div>
 

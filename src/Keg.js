@@ -5,18 +5,25 @@ const Keg = (props) => {
 
 
     var myStyledComponentStyles = {
-
+        width: "250px",
+        border: "15px solid green",
+        padding: "50px",
+        margin: "20px",
         backgroundColor: "#ecf0f1",
-        fontFamily: "sans-serif",
-        paddingTop: "50px"
+        fontFamily: "verdana"
+
+    }
+
+    var individual = {
+
     }
     return (
         <div style={myStyledComponentStyles}>
-            <h3>{props.name}</h3>
-            <h3>{props.brand}</h3>
-            <h3>{props.price}</h3>
-            <h3>{props.alcohol}</h3>
-        </div>
+            <h3> Username: {props.name}<hr /></h3>
+            <h3>Brand Name: {props.brand}<hr /></h3>
+            <h3>Alcohol price: {props.price}<hr /></h3>
+            <h3> Alcohol Percentage: {props.alcohol}<hr /></h3>
+        </div >
 
     );
 }

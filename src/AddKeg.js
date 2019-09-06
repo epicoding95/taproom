@@ -29,24 +29,23 @@ const AddKeg = () => {
 
 
     return (
-        <form onSubmit={AddAnotherKeg}>
-            <p></p>
-
+        <form onSubmit={AddAnotherKeg} >
+            <p><strong>Alchohol Name</strong></p>
             <input type="text"
                 name="name"
                 value={name}
                 onChange={updateName} />
-
+            <p><strong>Alchohol Brand</strong></p>
             <input type="text"
                 name="brand"
                 value={brand}
                 onChange={updateBrand} />
-
+            <p><strong>Alchohol Price</strong></p>
             <input type="text"
                 name="price"
                 value={price}
                 onChange={updatePrice} />
-
+            <p><strong>Alchohol Percentage</strong></p>
             <input type="text"
                 name="alcohol"
                 value={alcohol}
