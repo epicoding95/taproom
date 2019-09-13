@@ -11,7 +11,12 @@ export const KegProvider = props => {
             alcohol: "alot"
 
         }
+       
+
+        }
+       
     ]);
+   
 
     return (
         <KegContext.Provider value={[kegs, setKegs]}>
