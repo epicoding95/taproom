@@ -1,8 +1,9 @@
 import React, { useState, useContext } from 'react';
 import Keg from './Keg';
 import { KegContext } from './KegContext';
-
-const KegList = () => {
+import { v4 } from 'uuid';
+import { tsPropertySignature } from '@babel/types';
+const KegList = (props) => {
     const [kegs, setKegs] = useContext(KegContext);
 
     return (
@@ -15,6 +16,8 @@ const KegList = () => {
                         price={keg.price}
                         alcohol={keg.alcohol}
                         key={keg.id}
+                        id={keg.id}
+                        deleteKeg={props.deleteKeg}
                     />
                 ))
             }

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { KegContext } from './KegContext';
 
-const Nav = () => {
+const Header = () => {
 
 
     var styledNav = {
@@ -19,4 +19,4 @@ const Nav = () => {
     );
 }
 
-export default Nav;
+export default Header;

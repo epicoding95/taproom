@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { KegContext } from './KegContext';
-
+import { v4 } from 'uuid';
 const AddKeg = () => {
 
 
@@ -24,7 +24,7 @@ const AddKeg = () => {
     }
     const AddAnotherKeg = e => {
         e.preventDefault();
-        setKegs(prevKegs => [...prevKegs, { name: name, brand: brand, price: price, alcohol: alcohol }])
+        setKegs(prevKegs => [...prevKegs, { name: name, brand: brand, price: price, alcohol: alcohol, id: v4() }])
     }
 
 

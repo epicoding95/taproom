@@ -16,7 +16,7 @@ const Keg = (props) => {
         margin: "20px",
         backgroundColor: "#ecf0f1",
         fontFamily: "verdana"
-
+       
     }
 
     var individual = {
@@ -30,6 +30,8 @@ const Keg = (props) => {
                 <h3>Brand Name: {props.brand}<hr /></h3>
                 <h3>Alcohol price: {props.price}<hr /></h3>
                 <h3> Alcohol Percentage: {props.alcohol}<hr /></h3>
+                <button onClick={() => props.deleteKeg(props.id)} className='button muted-button'>Edit</button>
+                <button className='button muted-button'>Delete</button>
             </div >
         </div >
 
